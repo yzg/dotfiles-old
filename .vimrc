@@ -24,6 +24,7 @@ NeoBundle 'Lokaltog/powerline'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'kongo2002/fsharp-vim'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'DrawIt'
 
 filetype plugin indent on
@@ -63,8 +64,8 @@ set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 "set statusline=%<%f\ [%{&ff}][%{&fileencoding}]%h%m%r%=%b\ 0x%B\ \ %l,%c%V\ %P
 
 set expandtab shiftwidth=4 softtabstop=4
-autocmd Filetype ruby,fsharp,haskell,yaml set shiftwidth=2 softtabstop=2 
-autocmd Filetype cpp,haxe,javascript,html set noexpandtab shiftwidth=2 softtabstop=2 tabstop=2 
+autocmd Filetype coffee,ruby,fsharp,haskell,yaml set shiftwidth=2 softtabstop=2 
+autocmd Filetype cpp,haxe,javascript,html,php set noexpandtab shiftwidth=2 softtabstop=2 tabstop=2 
 
 let $MYVIMRC = "C:/Users/yzg/Dropbox/dotfiles/.vimrc"
 let $MYGVIMRC = "C:/Users/yzg/Dropbox/dotfiles/.gvimrc"
